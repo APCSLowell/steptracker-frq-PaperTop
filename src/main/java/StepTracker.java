@@ -20,6 +20,9 @@ public class StepTracker
   return activeDays;
  }
  public double averageSteps(){
+  if (totalDays == 0){
+   return 0;
+  }
   return (double)totalSteps/totalDays;
  }
 } 
